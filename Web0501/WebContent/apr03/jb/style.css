@@ -1,0 +1,18 @@
+@charset "EUC-KR";
+	
+a:link, a:visited, a:active{
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: red;
+}
+
+table, td ,tr, th{
+	font-size: 9pt;
+}
+
+p{
+	font-size: 9pt;
+}

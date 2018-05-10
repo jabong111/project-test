@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+       
+<tiles-definitions>
+
+	<definition name="list" template="/kh10.image/template2.jsp">
+		<put-attribute name="title" value="리스트"/>
+		<put-attribute name="top" value="/kh10.image/top.jsp"/>
+		<put-attribute name="middle" value="/kh10.image/list_view.jsp"/>
+		<put-attribute name="bottom" value="/kh10.image/bottom.jsp"/>
+	</definition>
+	
+	<definition name="write" template="/kh10.image/template2.jsp">
+		<put-attribute name="title" value="리스트"/>
+		<put-attribute name="top" value="/kh10.image/top.jsp"/>
+		<put-attribute name="middle" value="/kh10.image/writeForm_view.jsp"/>
+		<put-attribute name="bottom" value="/kh10.image/bottom.jsp"/>
+	</definition>
+
+	<definition name="hello" template="/tiles/template/layout.jsp">
+		<put-attribute name="title" value="헬로우 월드"></put-attribute>
+		<put-attribute name="header" value="/tiles/template/header.jsp"></put-attribute>
+		<put-attribute name="menu" value="/tiles/template/menu.jsp"></put-attribute>
+		<put-attribute name="body" value="/tiles/hello_body.jsp"></put-attribute>
+		<put-attribute name="footer" value="/tiles/template/footer.jsp"></put-attribute>
+	</definition>
+	
+<!-- 	<definition name="hello2" template="/tiles/template/layout.jsp">
+		<put-attribute name="title" value="헬로우 월드2"></put-attribute>
+		<put-attribute name="header" value="/tiles/template/header2.jsp"></put-attribute>
+		<put-attribute name="menu" value="/tiles/template/menu.jsp"></put-attribute>
+		<put-attribute name="body" value="/tiles/hello_body.jsp"></put-attribute>
+		<put-attribute name="footer" value="/tiles/template/footer2.jsp"></put-attribute>
+	</definition> -->
+	
+	<definition name="hello2" extends="hello">
+		<put-attribute name="title" value="헬로우 월드2"></put-attribute>
+		<put-attribute name="header" value="/tiles/template/header2.jsp"></put-attribute>
+		<put-attribute name="footer" value="/tiles/template/footer2.jsp"></put-attribute>
+	</definition>
+	
+	
+	<definition name="home" template="/tiles/template/layout.jsp" preparer="kh10.tiles.MenuViewPreparer">
+		<put-attribute name="title" value="헬로우 월드:홈"></put-attribute>
+		<put-attribute name="header" value="/tiles/template/header.jsp"></put-attribute>
+		<put-attribute name="menu" value="/tiles/template/home_menu.jsp"></put-attribute>
+		<put-attribute name="body" value="/tiles/home_body.jsp"></put-attribute>
+		<put-attribute name="footer" value="/tiles/template/footer.jsp"></put-attribute>
+	</definition>
+</tiles-definitions>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
